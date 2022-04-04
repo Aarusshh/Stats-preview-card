@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+
+    --Very-dark-blue
+    /* (main background) */
+    : hsl(233, 47%, 7%);
+
+    --Dark-desaturated-blue
+    /* (card background) */
+    : hsl(244, 38%, 16%);
+
+    --Soft-violet
+    /* (accent) */
+    : hsl(277, 64%, 61%);
+
+    --White
+    /* (main heading, stats) */
+    : hsl(0, 0%, 100%);
+    --Slightly-transparent-white
+    /* (main paragraph) */
+    : hsla(0, 0%, 100%, 0.75);
+    --Slightly-transparent-white-v2
+    /* (stat headings) */
+    : hsla(0, 0%, 100%, 0.6);
+}
+
+ul {
+
+    list-style: none;
+}
+
+
+body {
+    background-color: var(--Very-dark-blue);
+    color: white;
+    font-family: 'inter', sans-serif;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.container {
+    background-color: var(--Dark-desaturated-blue);
+    border-radius: 10px;
+    margin: 100px 0;
+
+}
+
+.container img {
+    border-radius: 0 10px 10px 0;
+}
+
+.text-area {
+    padding: 0 40px 20px;
+    text-align: center;
+    margin-top: 30px;
+
+}
+
+.text-area p {
+
+    color: var(--Slightly-transparent-white);
+    line-height: 1.8;
+    padding: 0 11px;
+    font-size: 18px;
+    margin: 30px 0;
+}
+
+.text-area h1 span {
+    color: var(--Soft-violet);
+}
+
+.text-area ul li span {
+
+    font-size: 25px;
+    font-weight: 700;
+    display: block;
+    color: var(--White);
+    margin-bottom: 10px;
+}
+
+.text-area ul li {
+
+    margin: 30px 0;
+    color: var(--Slightly-transparent-white);
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media (min-width:1080px) {
+
+    .container {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .text-area {
+        text-align: left;
+        padding: 0 50px 00px 50px;
+
+    }
+
+    .container .overlay {
+        height: 485px;
+        width: 655px;
+        position: absolute;
+        background-color: var(--Soft-violet);
+        opacity: .5;
+        z-index: 100;
+        border-radius: 0 10px 10px 0;
+
+    }
+
+    .img-main img {
+        position: relative;
+        height: 485px;
+        width: 655px;
+
+    }
+
+    .container ul {
+        display: flex;
+    }
+
+    .container ul li {
+        margin: 0 60px 80px 0;
+
+    }
+
+    .container h1 {
+        font-size: 2.8rem;
+
+    }
+
+    .container p {
+        padding-left: 0;
+
+    }
+}
